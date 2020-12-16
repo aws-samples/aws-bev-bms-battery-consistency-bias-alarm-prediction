@@ -20,9 +20,9 @@ find $source_dir/ -iname "node_modules" -type d -exec rm -r "{}" \; 2> /dev/null
 echo "find ../ -type f -name 'package-lock.json' -delete"
 find ../ -type f -name 'package-lock.json' -delete
 
-#echo "------------------------------------------------------------------------------"
-#echo "[Test] Services - Function"
-#echo "------------------------------------------------------------------------------"
-#cd $source_dir/
-#npm install
-#npm test
+echo "------------------------------------------------------------------------------"
+echo "[Test] Services - Function"
+echo "------------------------------------------------------------------------------"
+cd $source_dir/
+npm install
+npm test
