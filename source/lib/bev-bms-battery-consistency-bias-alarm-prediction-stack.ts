@@ -17,6 +17,7 @@ import fs = require('fs')
 export class AwsBevBmsBatteryConsistencyBiasAlarmPredictionStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
+    this.templateOptions.description = '(SO8024) - BEV BMS Battery Consistency Bias Alarm Prediction Stack. Template version v1.0';
 
     /**
     * Get Parameters
